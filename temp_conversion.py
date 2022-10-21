@@ -39,8 +39,22 @@ def hotter_temp():
     # Print out the hotter temp: '30.2 degrees celsius' or '85.1 degrees fahrenheit', respectively
     print('30.2 degrees celsius')
 
-convert_100_to_celsius()
-convert_0_to_celsius()
-convert_34_2_to_celsius()
-convert_5_to_fahrenheit()
-hotter_temp()
+# convert_100_to_celsius()
+# convert_0_to_celsius()
+# convert_34_2_to_celsius()
+# convert_5_to_fahrenheit()
+# hotter_temp()
+
+def convert_to_celsius(num):
+    print((num - 32) * 5 / 9)
+
+def convert_to_fahrenheit(num):
+    print((num * (9 / 5)) + 32)
+
+def temperature_convert(num, degrees):
+    if degrees == 'fahrenheit':
+        convert_to_celsius(num)
+    elif degrees == 'celsius':
+        convert_to_fahrenheit(num)
+
+temperature_convert(38, 'celsius')
